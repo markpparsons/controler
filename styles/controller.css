@@ -1,0 +1,77 @@
+.north{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 50%;
+	width: 80%;
+}
+
+.layer{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.Nlayer1{
+	background: -webkit-radial-gradient(bottom,white,red);
+	-webkit-animation: GoLayer1 1s infinite;
+}
+.Nlayer2{
+	background: -webkit-radial-gradient(center,white,red);
+	-webkit-animation: GoLayer2 1s infinite;
+}
+
+.Nlayer3{
+	background: -webkit-radial-gradient(top,white, red);
+	-webkit-animation: GoLayer3 1s infinite;
+}
+
+
+
+@-webkit-keyframes GoLayer1{
+  0% {opacity:1;}
+  50% {opacity:0;}
+  100% {opacity:0;}
+}
+@-webkit-keyframes GoLayer2{
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0;}
+}
+@-webkit-keyframes GoLayer3{
+  0% {opacity:0;}
+  50% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.south{
+	background: -webkit-linear-gradient(white, blue);
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 80%;
+}
+
+.Slayer1{
+	background: -webkit-radial-gradient(top,white,blue);
+	-webkit-animation: GoLayer1 1s infinite;
+}
+.Slayer2{
+	background: -webkit-radial-gradient(center,white,blue);
+	-webkit-animation: GoLayer2 1s infinite;
+}
+
+.Slayer3{
+	background: -webkit-radial-gradient(bottom,white, blue);
+	-webkit-animation: GoLayer3 1s infinite;
+}
+
+
+
+
+#Controller{
+	text-align: center;
+}
